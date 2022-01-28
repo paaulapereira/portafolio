@@ -9,7 +9,7 @@ const Nav = () => {
   return (
     <StyledNav>
       <h1>
-        <Link to="/" id="logo">
+        <Link to="/portafolio/" id="logo">
           Paula de Costa Pereira
         </Link>
       </h1>
