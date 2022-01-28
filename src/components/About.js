@@ -33,7 +33,7 @@ const About = () => {
           En la sección de Projects están distintos proyectos que he hecho.
         </motion.p>
         <motion.button variants={fade}>
-          <Link to="/projects">Projects</Link>
+          <Link to="/portafolio/projects">Projects</Link>
         </motion.button>
       </Description>
       <Image>

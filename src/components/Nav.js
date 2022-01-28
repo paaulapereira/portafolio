@@ -20,7 +20,7 @@ const Nav = () => {
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
             animate={{
-              width: pathname === "/" ? "50%" : "0%",
+              width: pathname === "/portafolio/" ? "50%" : "0%",
             }}
           />
         </li>
@@ -30,7 +30,7 @@ const Nav = () => {
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
             animate={{
-              width: pathname === "/projects" ? "50%" : "0%",
+              width: pathname === "/portafolio/projects" ? "50%" : "0%",
             }}
           />
         </li>
@@ -40,7 +40,7 @@ const Nav = () => {
             transition={{ duration: 0.75 }}
             initial={{ width: "0%" }}
             animate={{
-              width: pathname === "/contact" ? "50%" : "0%",
+              width: pathname === "/portafolio/contact" ? "50%" : "0%",
             }}
           />
         </li>

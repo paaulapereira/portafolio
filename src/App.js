@@ -14,9 +14,9 @@ function App() {
       <Nav />
       <AnimatePresence exitBeforeEnter>
         <Routes location={location} key={location.pathname}>
-          <Route path="/" exact element={<AboutMe />} />
-          <Route path="/projects" exact element={<Projects />} />
-          <Route path="/contact" exact element={<Contact />} />
+          <Route path="/portafolio/" exact element={<AboutMe />} />
+          <Route path="/portafolio/projects" exact element={<Projects />} />
+          <Route path="/portafolio/contact" exact element={<Contact />} />
         </Routes>
       </AnimatePresence>
     </div>
