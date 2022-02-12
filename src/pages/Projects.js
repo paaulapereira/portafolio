@@ -13,6 +13,7 @@ import {
 import miniMusicLibrary from "../assets/img/miniMusicLibrary.png";
 import ignite from "../assets/img/ignite.jpeg";
 import chat from "../assets/img/chat.png";
+import candyCrush from "../assets/img/candyCrush.png"
 import { useScroll } from "../components/useScroll";
 import Scroll from "../components/Scroll";
 
@@ -20,6 +21,7 @@ const Projects = () => {
   //creamos los controladores para el  scroll
   const [element, controls] = useScroll();
   const [element2, controls2] = useScroll();
+  const [element3, controls3] = useScroll();
   return (
     <ProjectsSection
       variants={pageAnimation}
@@ -51,28 +53,7 @@ const Projects = () => {
           </Hide>
         </a>
       </Project>
-      <Project
-        ref={element}
-        variants={fade}
-        animate={controls}
-        initial="hidden"
-      >
-        <motion.h2 variants={fade}>Ignite Games</motion.h2>
-        <motion.div className="line" variants={lineAnimation}></motion.div>
-        <a
-          href="https://react-gamesignite.netlify.app/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Hide>
-            <motion.img
-              variants={photoAnimation}
-              src={ignite}
-              alt="ignite games"
-            />
-          </Hide>
-        </a>
-      </Project>
+      
       <Project
         ref={element2}
         variants={fade}
@@ -93,6 +74,52 @@ const Projects = () => {
               variants={photoAnimation}
               src={chat}
               alt="socket chat"
+            />
+          </Hide>
+        </a>
+      </Project>
+      <Project
+        ref={element3}
+        variants={fade}
+        animate={controls3}
+        initial="hidden"
+      >
+        <motion.h2 variants={fade}>
+          Candy Crush Game with JavaScript
+        </motion.h2>
+        <motion.div className="line" variants={lineAnimation}></motion.div>
+        <a
+          href="https://paaulapereira.github.io/candy-crush-javascript/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Hide>
+            <motion.img
+              variants={photoAnimation}
+              src={candyCrush}
+              alt="candy crush"
+            />
+          </Hide>
+        </a>
+      </Project>
+      <Project
+        ref={element}
+        variants={fade}
+        animate={controls}
+        initial="hidden"
+      >
+        <motion.h2 variants={fade}>Ignite Games</motion.h2>
+        <motion.div className="line" variants={lineAnimation}></motion.div>
+        <a
+          href="https://react-gamesignite.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Hide>
+            <motion.img
+              variants={photoAnimation}
+              src={ignite}
+              alt="ignite games"
             />
           </Hide>
         </a>
