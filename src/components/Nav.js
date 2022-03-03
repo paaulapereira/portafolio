@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { useLocation } from "react-router-dom";
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
 
 const Nav = () => {
   const { pathname } = useLocation();
@@ -15,32 +15,32 @@ const Nav = () => {
       </h1>
       <ul>
         <li>
-          <Link to="/portafolio/">About Me</Link>
+          <Link to="/portafolio/">Sobre mí</Link>
           <Line
             transition={{ duration: 0.75 }}
-            initial={{ width: "0%" }}
+            initial={{ width: '0%' }}
             animate={{
-              width: pathname === "/portafolio/" ? "50%" : "0%",
+              width: pathname === '/portafolio/' ? '50%' : '0%',
             }}
           />
         </li>
         <li>
-          <Link to="/portafolio/projects">Projects</Link>
+          <Link to="/portafolio/projects">Proyectos</Link>
           <Line
             transition={{ duration: 0.75 }}
-            initial={{ width: "0%" }}
+            initial={{ width: '0%' }}
             animate={{
-              width: pathname === "/portafolio/projects" ? "50%" : "0%",
+              width: pathname === '/portafolio/projects' ? '50%' : '0%',
             }}
           />
         </li>
         <li>
-          <Link to="/portafolio/contact">Contact</Link>
+          <Link to="/portafolio/contact">Contacto</Link>
           <Line
             transition={{ duration: 0.75 }}
-            initial={{ width: "0%" }}
+            initial={{ width: '0%' }}
             animate={{
-              width: pathname === "/portafolio/contact" ? "50%" : "0%",
+              width: pathname === '/portafolio/contact' ? '50%' : '0%',
             }}
           />
         </li>
@@ -70,7 +70,7 @@ const StyledNav = styled.nav`
   }
   #logo {
     font-size: 1.5rem;
-    font-family: "Lobster", cursive;
+    font-family: 'Lobster', cursive;
     font-weight: lighter;
   }
   li {

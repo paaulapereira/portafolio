@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { motion } from "framer-motion";
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
 //animaciones
 import {
   pageAnimation,
@@ -8,27 +8,24 @@ import {
   lineAnimation,
   slider,
   sliderContainer,
-} from "../assets/animation";
+} from '../assets/animation';
 //imagenes
-import miniMusicLibrary from "../assets/img/miniMusicLibrary.png";
-import ignite from "../assets/img/ignite.jpeg";
-import chat from "../assets/img/chat.png";
-import candyCrush from "../assets/img/candyCrush.png"
-import { useScroll } from "../components/useScroll";
-import Scroll from "../components/Scroll";
+import miniMusicLibrary from '../assets/img/miniMusicLibrary.png';
+import ignite from '../assets/img/ignite.jpeg';
+import chat from '../assets/img/chat.png';
+import candyCrush from '../assets/img/candyCrush.png';
+import ticTacToe from '../assets/img/ticTacToe.png';
+import { useScroll } from '../components/useScroll';
+import Scroll from '../components/Scroll';
 
 const Projects = () => {
   //creamos los controladores para el  scroll
   const [element, controls] = useScroll();
   const [element2, controls2] = useScroll();
   const [element3, controls3] = useScroll();
+  const [element4, controls4] = useScroll();
   return (
-    <ProjectsSection
-      variants={pageAnimation}
-      initial="hidden"
-      animate="show"
-      exit="exit"
-    >
+    <ProjectsSection variants={pageAnimation} initial="hidden" animate="show" exit="exit">
       <motion.div variants={sliderContainer}>
         <Frame1 variants={slider}></Frame1>
         <Frame2 variants={slider}></Frame2>
@@ -45,48 +42,43 @@ const Projects = () => {
           rel="noreferrer"
         >
           <Hide>
-            <motion.img
-              variants={photoAnimation}
-              src={miniMusicLibrary}
-              alt="miniMusicLibrary"
-            />
+            <motion.img variants={photoAnimation} src={miniMusicLibrary} alt="miniMusicLibrary" />
           </Hide>
         </a>
       </Project>
-      
-      <Project
-        ref={element2}
-        variants={fade}
-        animate={controls2}
-        initial="hidden"
-      >
-        <motion.h2 variants={fade}>
-          Web Chat with Socket.io and Node.js
-        </motion.h2>
+      <Project ref={element} variants={fade} animate={controls} initial="hidden">
+        <motion.h2 variants={fade}>Ignite Games</motion.h2>
+        <motion.div className="line" variants={lineAnimation}></motion.div>
+        <a href="https://react-gamesignite.netlify.app/" target="_blank" rel="noreferrer">
+          <Hide>
+            <motion.img variants={photoAnimation} src={ignite} alt="ignite games" />
+          </Hide>
+        </a>
+      </Project>
+      <Project ref={element2} variants={fade} animate={controls2} initial="hidden">
+        <motion.h2 variants={fade}>Web Chat with Socket.io and Node.js</motion.h2>
+        <motion.div className="line" variants={lineAnimation}></motion.div>
+        <a href="https://simplechat-socket-react.netlify.app/" target="_blank" rel="noreferrer">
+          <Hide>
+            <motion.img variants={photoAnimation} src={chat} alt="socket chat" />
+          </Hide>
+        </a>
+      </Project>
+      <Project ref={element4} variants={fade} animate={controls4} initial="hidden">
+        <motion.h2 variants={fade}>Tic Tac Toe</motion.h2>
         <motion.div className="line" variants={lineAnimation}></motion.div>
         <a
-          href="https://simplechat-socket-react.netlify.app/"
+          href="https://paaulapereira.github.io/tic-tac-toe-react/"
           target="_blank"
           rel="noreferrer"
         >
           <Hide>
-            <motion.img
-              variants={photoAnimation}
-              src={chat}
-              alt="socket chat"
-            />
+            <motion.img variants={photoAnimation} src={ticTacToe} alt="tic tac toe" />
           </Hide>
         </a>
       </Project>
-      <Project
-        ref={element3}
-        variants={fade}
-        animate={controls3}
-        initial="hidden"
-      >
-        <motion.h2 variants={fade}>
-          Candy Crush Game with JavaScript
-        </motion.h2>
+      <Project ref={element3} variants={fade} animate={controls3} initial="hidden">
+        <motion.h2 variants={fade}>Candy Crush Game with JavaScript</motion.h2>
         <motion.div className="line" variants={lineAnimation}></motion.div>
         <a
           href="https://paaulapereira.github.io/candy-crush-javascript/"
@@ -94,36 +86,11 @@ const Projects = () => {
           rel="noreferrer"
         >
           <Hide>
-            <motion.img
-              variants={photoAnimation}
-              src={candyCrush}
-              alt="candy crush"
-            />
+            <motion.img variants={photoAnimation} src={candyCrush} alt="candy crush" />
           </Hide>
         </a>
       </Project>
-      <Project
-        ref={element}
-        variants={fade}
-        animate={controls}
-        initial="hidden"
-      >
-        <motion.h2 variants={fade}>Ignite Games</motion.h2>
-        <motion.div className="line" variants={lineAnimation}></motion.div>
-        <a
-          href="https://react-gamesignite.netlify.app/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Hide>
-            <motion.img
-              variants={photoAnimation}
-              src={ignite}
-              alt="ignite games"
-            />
-          </Hide>
-        </a>
-      </Project>
+
       <Scroll />
     </ProjectsSection>
   );
