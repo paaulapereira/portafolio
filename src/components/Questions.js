@@ -47,17 +47,21 @@ const Questions = () => {
             </p>
             <ul>
               <li>
-                Desarrollo de aplicaciones web funcionales, utilizando React, Redux, HTML, SCSS.
+                Desarrollo de aplicaciones web funcionales, utilizando React, Redux, HTML, SCSS o
+                StyledComponents.
               </li>
               <li>Diseño de páginas web a partir de requisitos funcionales en Figma.</li>
               <li>
-                Desarrollo de estilos (CSS) y HTML5 a partir de diseños y proyectos ya definidos.
+                Desarrollo de estilos (CSS o SASS) y HTML5 a partir de diseños y proyectos ya
+                definidos.
               </li>
               <li>
                 Creación de e-mailings para envíos masivos, con ZURB “foundation emails template”.
               </li>
               <li>Gestión y mantenimiento de páginas webs basadas en Wordpress y Drupal.</li>
-              <li>Trabajo en equipo basado en Metodologías Ágiles - Scrum.</li>
+              <li>
+                Trabajo en equipo basado en Metodologías Ágiles - Scrum, como chapter de Frontend
+              </li>
               <li>Trato directo con los clientes para toma de requisitos y ajustes de cambios. </li>
             </ul>
           </div>

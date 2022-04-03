@@ -1,8 +1,7 @@
 import Wave from './Wave';
 import { AboutSection, Description, Image, Hide } from '../assets/styles/styles';
 import { titleAnimation, fade, photoAnimation } from '../assets/animation';
-import yo from '../assets/img/yo.jpeg';
-import euu from '../assets/img/euu.png';
+import euPaula from '../assets/img/euPaula.png';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
@@ -29,7 +28,7 @@ const About = () => {
         </motion.button>
       </Description>
       <Image>
-        <motion.img src={euu} alt="yo" variants={photoAnimation} />
+        <motion.img src={euPaula} alt="yo" variants={photoAnimation} />
       </Image>
 
       <Wave />

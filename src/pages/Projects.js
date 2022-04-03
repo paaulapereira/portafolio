@@ -15,6 +15,7 @@ import ignite from '../assets/img/ignite.jpeg';
 import chat from '../assets/img/chat.png';
 import candyCrush from '../assets/img/candyCrush.png';
 import ticTacToe from '../assets/img/ticTacToe.png';
+import taskfy from '../assets/img/taskfy.png';
 import { useScroll } from '../components/useScroll';
 import Scroll from '../components/Scroll';
 
@@ -24,6 +25,7 @@ const Projects = () => {
   const [element2, controls2] = useScroll();
   const [element3, controls3] = useScroll();
   const [element4, controls4] = useScroll();
+  const [element5, controls5] = useScroll();
   return (
     <ProjectsSection variants={pageAnimation} initial="hidden" animate="show" exit="exit">
       <motion.div variants={sliderContainer}>
@@ -87,6 +89,19 @@ const Projects = () => {
         >
           <Hide>
             <motion.img variants={photoAnimation} src={candyCrush} alt="candy crush" />
+          </Hide>
+        </a>
+      </Project>
+      <Project ref={element5} variants={fade} animate={controls5} initial="hidden">
+        <motion.h2 variants={fade}>Taskfy with Typescript</motion.h2>
+        <motion.div className="line" variants={lineAnimation}></motion.div>
+        <a
+          href="https://paaulapereira.github.io/taskify-typescript/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Hide>
+            <motion.img variants={photoAnimation} src={taskfy} alt="taskfy" />
           </Hide>
         </a>
       </Project>
