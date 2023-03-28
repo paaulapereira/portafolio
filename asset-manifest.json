@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portafolio/static/css/main.992ce00e.css",
-    "main.js": "/portafolio/static/js/main.3061ecc7.js",
+    "main.js": "/portafolio/static/js/main.7e5e8221.js",
     "static/js/787.ae0d8d37.chunk.js": "/portafolio/static/js/787.ae0d8d37.chunk.js",
     "static/media/euPaula.png": "/portafolio/static/media/euPaula.09b14c578a089f76b91c.png",
     "static/media/candyCrush.png": "/portafolio/static/media/candyCrush.63cae34c67f3d6f9aefb.png",
@@ -12,6 +12,7 @@
     "static/media/ticTacToe.png": "/portafolio/static/media/ticTacToe.d3eceded2590a01e0f09.png",
     "static/media/sass.svg": "/portafolio/static/media/sass.46d19839b09b93199c0d26f65af6a41a.svg",
     "static/media/reactIcon.svg": "/portafolio/static/media/reactIcon.da8345a9342b47efd0fd0f6446b42d4c.svg",
+    "static/media/jest.svg": "/portafolio/static/media/jest.36b5a820d928f8364c56a214b5e69a43.svg",
     "static/media/figma.svg": "/portafolio/static/media/figma.48f9c956dd552f81af1a7961a34db272.svg",
     "static/media/github.svg": "/portafolio/static/media/github.2f20faf825fb213b129e9231de179a3f.svg",
     "static/media/node.svg": "/portafolio/static/media/node.a4df3e2adfef28293d01b8883a0d77a8.svg",
@@ -24,12 +25,13 @@
     "static/media/scroll.svg": "/portafolio/static/media/scroll.f0e09e684d220fa0673f9bae7f7d06a7.svg",
     "static/media/css3.svg": "/portafolio/static/media/css3.875d0526819ac663ad66282ea74f3b56.svg",
     "static/media/html5.svg": "/portafolio/static/media/html5.9b305f2df096601b779bcbe4dbaf3a55.svg",
+    "static/media/ts.svg": "/portafolio/static/media/ts.4e1f2204c3f6efb89bb0caac8015514b.svg",
     "main.992ce00e.css.map": "/portafolio/static/css/main.992ce00e.css.map",
-    "main.3061ecc7.js.map": "/portafolio/static/js/main.3061ecc7.js.map",
+    "main.7e5e8221.js.map": "/portafolio/static/js/main.7e5e8221.js.map",
     "787.ae0d8d37.chunk.js.map": "/portafolio/static/js/787.ae0d8d37.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.992ce00e.css",
-    "static/js/main.3061ecc7.js"
+    "static/js/main.7e5e8221.js"
   ]
 }
