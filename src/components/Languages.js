@@ -14,6 +14,8 @@ import mongodb from "../assets/img/mongodb.svg";
 import node from "../assets/img/node.svg";
 import bootstrap from "../assets/img/bootstrap.svg";
 import git from "../assets/img/git.svg";
+import ts from "../assets/img/ts.svg";
+import jest from "../assets/img/jest.svg"
 
 const Languages = () => {
   return (
@@ -36,6 +38,20 @@ const Languages = () => {
               <h3>JavaScript</h3>
             </div>
             <p>Programación Web</p>
+          </Card>
+          <Card variants={fade}>
+            <div className="icon">
+              <img src={ts} alt="react" />
+              <h3>TypeScript</h3>
+            </div>
+            <p>Programación Web</p>
+          </Card>
+          <Card variants={fade}>
+            <div className="icon">
+              <img src={jest} alt="react" />
+              <h3>Jest</h3>
+            </div>
+            <p>Testing Unitario</p>
           </Card>
           <Card variants={fade}>
             <div className="icon">

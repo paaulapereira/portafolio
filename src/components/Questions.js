@@ -20,8 +20,8 @@ const Questions = () => {
         <Toggle title="Presentación">
           <div className="answer">
             <p>
-              Soy una estudiante de Ingeniería Informática con más de 3 años de experiencia
-              trabajando a tiempo parcial en Frontend. Me encanta el diseño y el desarrollo web y
+              Soy una ingeniera informática con más de 4 años de experiencia
+              trabajando en Frontend. Me encanta el diseño y el desarrollo web y
               busco siempre la solución más eficaz para los desafíos que surgen en el trabajo,
               gestionando bien el tiempo y manteniendo siempre un punto de vista proactivo. La
               comunicación, uno de mis puntos fuertes, me permite llevar a cabo buenas
@@ -32,17 +32,28 @@ const Questions = () => {
         <Toggle title="Formación Académica">
           <div className="answer">
             <p>
-              Estudiante de Ingeniería Informática, cursando el último curso en la Universidad
-              Europea del Atlántico, en Santander, Cantabria.
+              Grado de Ingeniería Informática en la Universidad Europea del Atlántico, en Santander - Cantabria.
             </p>
-            <p>Empecé en Septiembre de 2018 y me graduo en Junio de 2022.</p>
+            <p>Septiembre de 2018 - Junio de 2022.</p>
           </div>
         </Toggle>
         <Toggle title="Experiencia Laboral">
           <div className="answer">
+          <p><span>Software Engineer - Capgemini</span></p>
+          <p>
+              Em Mayo de 2022 empecé a trabajar para <i>Capgemini</i> como Software Engineer y sigo hasta la actualidad. {' '}</p>
+              <ul>
+                <li>Desarrollo de aplicaciones web en el sector bancario utilizando React.
+</li>
+                <li>Empleo de testing unitario para garantizar la calidad de las soluciones desarrolladas, utilizando Jest y Enzyme.</li>
+                <li>Integración de APIs para funcionalidad de FrontEnd</li>
+                <li>Implementación de diseños y requerimientos a aplicaciones FrontEnd.</li>
+                <li>Creación de componentes funcionales empleando JavaScript/TypeScript y StyledComponents</li>
+              </ul>
+            <p><span>Desarrolladora y Diseñadora Web - FUNIBER</span></p>
             <p>
-              Empecé a trabajar como Desarrolladora y Diseñadora Web en Septiembre de 2018 para{' '}
-              <i>Fundación Iberoamericana Universitaria - FUNIBER</i> y sigo hasta la actualidad.
+              Trabajé como Desarrolladora y Diseñadora Web desde Septiembre de 2018 hasta Mayo de 2022 para {' '}
+              <i>Fundación Iberoamericana Universitaria - FUNIBER</i>.
               Algunas de las cosas que hice en ese trabajo fueron:
             </p>
             <ul>
@@ -109,6 +120,9 @@ const Faq = styled(AboutSection)`
       line-height: 150%;
       color: #cccccc;
       padding: 0.2rem 0rem;
+    }
+    span{
+      font-size: 2rem;
     }
   }
 `;
